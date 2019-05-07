@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      {{ .Title }} - {{ .Site.Title }}
+    </title>
+    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
+
+    <script src="//static.getclicky.com/js" type="text/javascript"></script>
+    <script type="text/javascript">try{ clicky.init(101132832); }catch(e){}</script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101132832ns.gif" /></p></noscript>
+
+    {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/favicon.png">
+  </head>
+
+
+  <body class="site site-{{ .Section }}">
+    <div class="site-content">
+      <div class="container-fluid">
+          <h1 class="primary-title"><a href="/">M.R. Siavash Katebzadeh</a></h1>
+          <p class="container-about">
+              Welcome to my homepage!
+
+              You can find more information about me <a href="/about">here</a>.
+          </p>

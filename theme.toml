@@ -1,0 +1,11 @@
+name = "Dracula"
+license = "GPL"
+description = "A dracula theme for mr.katebzadeh.xyz"
+homepage = "https://mr.katebzadeh.xyz"
+tags = ["dark", "blog", "personal", "simple", "clean", "starter", "dracula"]
+features = ["blog"]
+min_version = "0.1"
+
+[author]
+  name = "Siavash Katebzadeh"
+  homepage = "https://mr.katebzadeh.xyz"

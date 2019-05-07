@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+
+  {{ partial "nav.html" . }}
+  <hr>
+
+  {{ .Content }}
+
+
+  <section>
+    {{ range (.Site.RegularPages.GroupByPublishDate "2006") }}
+    {{ if ne .Key "0001" }}
+    <h4>{{ .Key }}</h4>
+
+    <ul>
+      {{ range .Pages }}
+        {{ if eq .Section "blog" }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <i class="text-muted post-date">{{ .Date.Format "Jan 02"}}</i></li>
+      {{ end }}
+      {{ end }}
+    </ul>
+    {{ end }}
+    {{ end }}
+  </section>
+</div>
+
+{{ partial "footer.html" . }}
