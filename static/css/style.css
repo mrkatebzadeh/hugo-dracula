@@ -77,6 +77,7 @@ body.site {
 
 .site-content {
   flex: 1;
+  text-align: center;
 }
 
 .fa {
@@ -120,9 +121,12 @@ p code, li code {
 }
 
 /* Main container */
-
+.wrapper {
+  width: 100%;
+  display: inline-block;
+}
 .container, .container-fluid {
-  max-width: 40rem;
+  text-align: left;
   padding: 21px 15% 21px 15%;
 }
 
