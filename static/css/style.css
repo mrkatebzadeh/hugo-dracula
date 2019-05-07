@@ -59,6 +59,7 @@ html {
 
 body {
   font-family: 'Source Sans Pro';
+  font: 16px;
   line-height: 1.2;
   background-color: #282a36;
   color: #f8f8f2;
@@ -78,11 +79,18 @@ body.site {
   flex: 1;
 }
 
+.fa {
+  padding: 5px;
+}
+
 .main-nav {
   text-align: center;
 }
 
-blockquote { margin-left: 1.777rem; }
+blockquote {
+  padding: 0 0.01rem ;
+  font-style: italic;
+}
 p { margin-bottom: 1.3rem; }
 
 a:link, a:visited {
@@ -171,14 +179,13 @@ strong img {
   }
 }
 
-
 /* Typography */
 h1, .h1 {
   font-family: 'Noto Serif';
   color: #8be9fd;
   font-weight: 900;
   line-height: 1;
-  font-size: 2.2rem;
+  font-size: 2.em;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -191,24 +198,28 @@ h1, .h1 {
 }
 
 h2, .h2 {
+  font-family: 'Noto Serif';
+  color: #8be9fd;
   font-weight: 700;
   line-height: 1;
-  font-size: 2.069rem;
+  font-size: 1.25em;
   margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
 @media (max-width: 714px) {
   h2, .h2 {
-    font-size: 1.277rem;
+    font-size: 1.177rem;
     margin-bottom: 0;
   }
 }
 
 h3, .h3 {
+  font-family: 'Noto Serif';
+  color: #ffb86c;
   font-weight: 700;
   line-height: 1;
-  font-size: 1.377rem;
+  font-size: 1.1em;
   margin-top: 2rem;
   margin-bottom: 1.4rem;
 }
@@ -223,7 +234,7 @@ h3, .h3 {
 h4, .h4 {
   font-weight: 700;
   line-height: 1;
-  font-size: 1.033rem;
+  font-size: 1em;
   margin-top: 2rem;
   margin-bottom: 1.4rem;
 }
