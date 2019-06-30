@@ -2,8 +2,9 @@
   <p>
     {{ range .Site.Menus.main }}
       <a href="{{ .URL }}" title="{{ .Name }}">
-          <i class="fa {{ .Pre }}"></i>
+	{{.Name}}
       </a>
+      <i class="fa {{ .Pre }}"></i>
     {{ end }}
   <p>
 </nav>
